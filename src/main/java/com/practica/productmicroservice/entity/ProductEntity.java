@@ -1,5 +1,6 @@
 package com.practica.productmicroservice.entity;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Getter;
@@ -12,8 +13,9 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class ProductEntity {
+	@Id
 	private String id;
 	private String productName;
 	private String productDescription;
-	private Double unitPricee;
+	private Double unitPrice;
 	}
